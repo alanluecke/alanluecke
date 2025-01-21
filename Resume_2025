@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{mhchem}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.8in}
+\addtolength{\textwidth}{1.00in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.7in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Alan Luecke} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (828) 687-0532 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{aluke174@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/alan-luecke-479502230/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/alan-luecke}}  ~
+    \vspace{-4pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UNC Charlotte}{August 2021 - Present}
+      {Bachelor of Science in Mechanical Engineering}{}
+      
+      %{Concentration: Thermal Science \& Fluid Mechanics}
+      
+      %{GPA: 3.50}
+  \resumeSubHeadingListEnd
+  
+   \vspace{-17pt} % Adjust the value as needed
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Blue Ridge Community College}{January 2017 - May 2021}
+      {Associates In Engineering}{}
+      
+      %{GPA: 3.63}
+  \resumeSubHeadingListEnd
+  
+   \vspace{-17pt} % Adjust the value as needed
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Henderson County Early College High School}{August 2016 - May 2021}
+      {High School Diploma}{}
+      
+      %{GPA: 3.63}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\vspace{-17pt}
+\section{Technical Skills}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=3pt]
+                \item\small PTC Creo Parametric
+                \item OnShape
+                \item AutoCAD
+                \item Zeiss Reverse Engineering
+                \item Engineering Drawings
+                \item Production Packs 
+                \item Test Specifications 
+                \item Data Analysis
+                \item Part Sourcing/Procurement
+                \item Microsoft Suite
+                \item Jobsite Safety Inspections
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\vspace{5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mechanical Engineering Co-Op}{January 2024 - August 2024}
+      {Crowder Construction Company}{}
+      \resumeItemListStart
+        \resumeItem{Project Management at the STOWE Regional Water Resource Recovery Facility.}
+        \resumeItem{Sourced parts/tools from different companies, wrote purchase orders and subcontracts, weekly jobsite safety inspections, and produced production packs for the primary and final clarifier mechanisms. }
+        \resumeItem{Coordinated large deliveries of rebar, and did QC inspections on the deliveries.}
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Design Engineering Co-Op/Internship}{May 2022 - December 2022/May 2023 - August 2023}
+      {Doosan Bobcat}{}
+      \resumeItemListStart
+        \resumeItem{Worked with a multi-disciplinary team of engineers to design the packaging for a Hybrid Generator project. The generator consisted of 3 large inverters, 12 large DC batteries, solar panels, and other miscellaneous electrical components. My final design packaged these components into a towable chassis to optimize weight distribution, airflow, and performance.}
+        \resumeItem{Produced bills of materials and engineering drawings for the Industrial Air Compressors.}
+        \resumeItem{Other skills; Excel, decal review, families/OLDs, calculations, Windchill, part revisions, ECO audits, time management, communication, and Geometric tolerances. }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Line Assembler}{July 2021 - August 2021}
+      {EATON Corporation}{}
+      \resumeItemListStart
+        \resumeItem{Assembled low voltage switchgear.}
+        \resumeItem{Introduced to engineering drawings and the manufacturing process.}
+      \resumeItemListEnd
+
+  
+
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+ 
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Junior Design Pick-and-Place Robot} $|$ \emph{Mechanical Design, Manufacturing}}{August 2023 - December 2023}
+          \resumeItemListStart
+            \resumeItem{Worked on a team of 6 mechanical engineering students to design and build a robot to move different colored wood blocks into designated bins. The robot needed to be autonomous and remote controlled.}
+            \resumeItem{Designed the gripper mechanism to pick up the blocks. It consisted of a rack and pinion design, powered by a small servo motor, to move a gripping arm in the X direction.}
+            \resumeItem{Performed multiple calculations for different components on the robot, produced engineering drawings, 3D printed many different parts, and machined the base plate for the robot.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+\resumeProjectHeading
+          {\textbf{Boy Scouts of America} $|$ \emph{Eagle Scout Project}}{August 2021 - December 2021}
+          \resumeItemListStart
+            \resumeItem{Made a walking path for students and teachers at Fletcher Elementary School.}
+            \resumeItem{Coordinated volunteers, tools, parts/supplies, budgeting, and permits.}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+\end{document}
